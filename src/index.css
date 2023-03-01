@@ -39,7 +39,7 @@ form {
 label {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1px;
+  margin-bottom: 1em;
 }
 
 label span {
@@ -48,17 +48,23 @@ label span {
   text-align: left;
 }
 
-input, textarea {
+input,
+textarea {
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #ccc;
-  padding: 0.8em 0;
+  padding: 0.8em 0em;
   background-color: transparent;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
 }
 
 .btn {
   background-color: #1a8918;
-  color: white;
+  color: #fff;
   text-align: center;
   cursor: pointer;
   border-radius: 10px;
@@ -84,7 +90,7 @@ input, textarea {
 
 .btn:hover {
   background-color: #0f730c;
-  color: #FFF;
+  color: #fff;
 }
 
 .btn.btn-outline:hover {
@@ -92,11 +98,11 @@ input, textarea {
 }
 
 .btn.btn-danger:hover {
-  background-color: #DC3545;
+  background-color: #dc3545;
 }
 
 button[disabled] {
-  background-color: #AAA;
+  background-color: #aaa;
 }
 
 .container .error {
