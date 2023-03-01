@@ -48,23 +48,17 @@ label span {
   text-align: left;
 }
 
-input,
-textarea {
+input, textarea {
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #ccc;
-  padding: 0.8em 0em;
+  padding: 0.8em 0;
   background-color: transparent;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #aaa;
 }
 
 .btn {
   background-color: #1a8918;
-  color: #fff;
+  color: white;
   text-align: center;
   cursor: pointer;
   border-radius: 10px;
@@ -90,7 +84,7 @@ textarea::placeholder {
 
 .btn:hover {
   background-color: #0f730c;
-  color: #fff;
+  color: #FFF;
 }
 
 .btn.btn-outline:hover {
@@ -98,11 +92,11 @@ textarea::placeholder {
 }
 
 .btn.btn-danger:hover {
-  background-color: #dc3545;
+  background-color: #DC3545;
 }
 
 button[disabled] {
-  background-color: #aaa;
+  background-color: #AAA;
 }
 
 .container .error {
