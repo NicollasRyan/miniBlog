@@ -5,6 +5,8 @@ import {
   Navigate,
 } from "react-router-dom";
 
+import { AuthProvider } from "./context/AuthContext";
+
 import "./App.css";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
@@ -16,18 +18,20 @@ import { Register } from "./Pages/Register";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navbar />
-        <div className="container">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-          </Routes>
-        </div>
-        <Footer />
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Navbar />
+          <div className="container">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+            </Routes>
+          </div>
+          <Footer />
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
