@@ -41,7 +41,7 @@ export function Register() {
   });
 
   return (
-    <div>
+    <div className={styles.register}>
       <h1>Cadastre-se para postar</h1>
       <p>Crie seu usuário e compartilhe suas histórias</p>
       <form onSubmit={handleSubmit}>
@@ -79,7 +79,7 @@ export function Register() {
           />
         </label>
         <label>
-          <span>Senha:</span>
+          <span>Confirme Senha:</span>
           <input
             type="password"
             name="confirmPassword"
