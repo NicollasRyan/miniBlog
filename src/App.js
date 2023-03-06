@@ -20,7 +20,7 @@ import { Login } from "./Pages/Login";
 import { Register } from "./Pages/Register";
 import { CreatePost } from "./Pages/CreatePost";
 import { Dashboard } from "./Pages/Dashbord";
-import { Search } from "./components/Search";
+import { Search } from "./Pages/Search";
 
 function App() {
   const [user, setUser] = useState(undefined);
