@@ -1,9 +1,9 @@
-import styles from "./styles.module.css";
-
 import { useFetchDocuments } from "../../hooks/useFetchDocuments";
 import { Link } from "react-router-dom";
 import { useQuery } from "../../hooks/useQuery";
 import { PostsDetail } from "../../components/PostsDetail/index";
+
+import styles from "./styles.module.css";
 
 export function Search() {
   const query = useQuery();

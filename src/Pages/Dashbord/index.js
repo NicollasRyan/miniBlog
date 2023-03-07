@@ -1,10 +1,9 @@
-import styles from "./styles.module.css";
-
 import { Link } from "react-router-dom";
-
 import { useAuthValue } from "../../context/AuthContext";
 import { useFetchDocuments } from "../../hooks/useFetchDocuments";
 import { useDeleteDocument } from "../../hooks/useDeleteDocument";
+
+import styles from "./styles.module.css";
 
 export function Dashboard() {
   const { user } = useAuthValue();
